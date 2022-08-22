@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedy series</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="p1">
+        <div class="heading">
+            <div id="ham">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars">=
+                        <div id="menubar">_</div>
+                    </i>
+                  </label>
+                
+                    <ul>
+                      <li><a class="active" href="#" onclick="home()">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div><h1>NETFLIX</h1></div>
+        <div class="searchbar">
+            <input type="text" name="result" id="wanttosearch" placeholder="Search here" onkeyup="search()">
+
+            <div id="listbtn">
+
+                <!-- <img src="/Images/dot.jpg" alt="explore" id="exp" > -->
+                <button id="ex" onclick="exp()" >...</button>
+                
+                
+            </div>
+            
+            
+
+        </div>
+    </div>
+    <div id="cont">
+        <div style="width: 50vw;"></div>
+         <div id="nav" style="display: none;">
+            <ul>
+                <li><a href="#" id="pop" onclick="showpop()">Popular</a></li>
+            <li><a href="#" id="com" onclick="showcom()">Comedy</a></li>
+            
+            <li><a href="#" id="home" onclick="home()">Show All</a></li>
+        </ul>
+    </div>
+    </div>
+    <div><h1 style="color: white; margin:20px;">Comedy </h1></div>
+
+
+
+    <div class="container">
+        <div class="popslide">
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/clueless.jpg" alt="" class="pitems"></a><h5>clueless</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/finding ohana.jpg" alt="" class="pitems"></a><h5>Finding Ohana</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/good place.jpg" alt="" class="pitems"></a><h5>Good Place</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/shows/comedy/grace and frankie.jpg" alt="" class="pitems"></a><h5>Grace & Frankie</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/inbetweeners.jpg" alt=""class="pitems"></a><h5>InBetweeners</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/jane.jpg" alt="" class="pitems"></a><h5>jane the Virgin</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/master of none.jpg" alt="" class="pitems"></a><h5>Master Of None</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/matilda.jpg" alt="" class="pitems"></a><h5>Matilda</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/mean girls.jpg" alt="" class="pitems"></a><h5>Mean Girls</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/orange.jpg" alt="" class="pitems"></a><h5>Orange is the new Balck</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/panda.jpg" alt="" class="pitems"></a><h5>Kngfu Panda</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/parenthood.jpg" alt="" class="pitems"></a><h5>ParentHood</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/prettylittleliars.jpg" alt="" class="pitems"></a><h5>Preety Little Liars</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/santa.jpg" alt="" class="pitems"></a><h5>Santa Clarita Diet</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/shameless.jpg" alt="" class="pitems"></a><h5>Shameless</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/the it crowd.jpg" alt="" class="pitems"></a><h5>The it Crowd</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/trailerparkboys.jpg" alt="" class="pitems"></a><h5>Trailer Park Boys</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/young and hungary.jpg" alt="" class="pitems"></a><h5>Young Hungaryt</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/Shows/comedy/arrested development.jpg" alt="" class="pitems"></a><h5>Arrested Development</h5>
+            </div>
+            <div class="comseries">
+                <a href="https://youtu.be/b9EkMc79ZSU"><img src="/Images/shows/comedy/bluemountainstate.jpg" alt="" class="pitems"></a><h5>Blue Mountain  state</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Javascript/script.js"></script>
+
+</body>
+</html>

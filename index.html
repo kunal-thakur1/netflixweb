@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix-Clone</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div id="signinpage" class="signinpage" style="display: none;">
+        <div id="signinpage2" class="signinpage2">
+            <div class="page1">
+                <div class="heading"><h1>NETFLIX</h1></div>
+                <div class="button">
+                    <button onclick="login()">Sign In</button>
+                </div>
+            </div>
+
+            <div class="signwindow" id="signwindow">
+                <div class="containeroflogin">
+                    <h1>Sign In</h1>
+
+                    <div class="details" >
+                        <button id="cross" class="cross" onclick="logpagedisable()">x</button>
+                        <input type="text" id="username" placeholder="User Name">
+                        
+                        <input type="password" name="password" id="pass" placeholder="Password">
+                        <button id="loginbtn" onclick="checkdetails()">Sign In</button>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <head>
+        <div class="mainpage1">
+
+            <div class="page1">
+                <div class="heading"><h1>NETFLIX</h1></div>
+                <div class="button">
+                    <select>    
+                        <option value="English">English</option>    
+                        <option value="Hindi">Hindi</option>    
+                    </select>
+                    <button id="loginandout" onclick="login()">Sign In</button>
+                </div>
+            </div>
+            <div class="text">
+                <h1>Unlimited movies, TV <br>shows and more.</h1>
+                <h2>Watch anywhere.Cancel anytime.</h2>
+                <h4>Ready to watch? Enter your email to create or restart your membership.</h4>
+                <input type="text" name="email" id="start" placeholder="Email address">
+                <button onclick="started()">Get Started ></button>
+            </div>
+        </div>
+    </head>
+
+    <div class="line"></div>
+
+    <div class="page2">
+        <div class="text2">
+
+            <h1>Enjoy on your TV.</h1>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+        <div class="tv">
+            <img src="Images/video.gif" alt="funny GIF" id="gif">
+            <img src="Images/tv.png" alt="" id="tv">
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="page3">
+        <div class="tv3">
+            <img src="Images/mobile.jpg" alt="" id="tv3">
+            <!-- <img src="/NetfixClone/Images/video.gif" alt="funny GIF" id="gif"> -->
+            <div class="download">
+                <img src="Images/st.jpg" alt="download anytime">
+                <h4>Downloading...</h4>
+                <img src="Images/loading.gif" alt="" id="load">
+            </div>
+        </div>
+        <div class="text3">
+
+            <h1>Download your shows to watch offline.</h1>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </div>
+    <div class="line"></div>
+
+    <div class="page2">
+        <div class="text2">
+
+            <h1>Watch everywhere.</h1>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+        <div class="tv">
+            <img src="Images/applevideo (1).gif" alt="funny GIF" id="gif4">
+            <img src="Images/apple.png" alt="" id="tv">
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="page2">
+        <div class="tv">
+            <img src="Images/kid.png" alt="funny GIF" id="kid">
+        </div>
+        <div class="text2" id="kidhead">
+
+            <h1 >Create profiles for children.</h1>
+            <p id="kidpara">Send children on adventures with their favourite characters in a space made just for them—free with your membership.
+            </p>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="ques">
+        <h1 id="freq">Frequently Asked Questions</h1>
+        <div class="questions">
+            <div class="q1" onclick="details1()">
+                <h3>What Is Netflix?</h3>
+                
+                <h4 id="hq1" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quasi!</h4>
+                <p id="plus1">+</p>
+            </div>
+            <div class="q1" onclick="details2()">
+                <h3>How much does Netflix cost?</h3>
+                <h4 id="hq2" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quasi!</h4>
+
+                <p id="plus2">+</p>
+            </div>
+            <div class="q1" onclick="details3()">
+                <h3>Where can I watch?</h3>
+                <h4 id="hq3" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quasi!</h4>
+
+                <p id="plus3">+</p>
+            </div>
+            <div class="q1" onclick="details4()">
+                <h3>How do I cancel?</h3>
+                <h4 id="hq4" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quasi!</h4>
+
+                <p id="plus4">+</p>
+            </div>
+            <div class="q1" onclick="details5()">
+                <h3>What can I watch on Netflix?</h3>
+                <h4 id="hq5" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quasi!</h4>
+
+                <p id="plus5">+</p>
+            </div>
+            <div class="q1" onclick="details6()">
+                <h3>Is Netflix good for kids?</h3>
+                <h4 id="hq6" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perferendis, quasi!</h4>
+
+                <p id="plus6">+</p>
+            </div>
+            <p id="readytowatch">Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" placeholder="Email address" id="start2">
+            <button onclick="started()" id="startbtn2">Get Started ></button>
+        </div>
+    </div>
+
+    <div class="line"></div>
+
+    <div class="footer">
+        <div class="number">
+            <h4>Questions? </h4>&nbsp;
+            <a href="#"> Call 0045-5412-45-13145</a>
+        </div>
+        <div class="items">
+            <div class="list_items" id="list1">
+
+                
+                    <a href="#">FAQ</a>
+                    <a href="#">Investors Relations</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Speed Test</a>
+                
+            </div>
+            <div class="list_items">
+
+                
+                <a href="#">Help Centers</a>
+                <a href="#">Jobs</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Legal Notices</a>
+            
+            </div>
+            <div class="list_items">
+
+                
+                <a href="#">Accounts</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Only on Netflix</a>
+            
+            </div>
+            <div class="list_items">
+
+                
+                <a href="#">Media Center</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Contact Us</a>            
+            </div>
+        </div>
+        <div class="lang">
+
+            <select id="footlang">    
+                <option value="English">English</option>    
+                <option value="Hindi">Hindi</option>    
+            </select>
+        </div>
+        <div class="lang">
+
+            <p>Netflix India</p><br>
+            <h4>Made By- Kunal Thakur</h4>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="/Javascript/script.js"></script>
+</body>
+
+
+</html>
+

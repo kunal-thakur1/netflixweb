@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular series</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="p1">
+        <div class="heading">
+            <div id="ham">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars">=
+                        <div id="menubar">_</div>
+                    </i>
+                  </label>
+                
+                    <ul>
+                      <li><a class="active" href="#" onclick="home()">Home</a></li>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                      <li><a href="#">Feedback</a></li>
+                    </ul>
+                </div><h1>NETFLIX</h1></div>
+        <div class="searchbar">
+            <input type="text" name="result" id="wanttosearch" placeholder="Search here" onkeyup="search()">
+
+            <div id="listbtn">
+
+                <!-- <img src="/Images/dot.jpg" alt="explore" id="exp" > -->
+                <button id="ex" onclick="exp()" >...</button>
+                
+                
+            </div>
+            
+            
+
+        </div>
+    </div>
+    <div id="cont">
+        <div style="width: 50vw;"></div>
+         <div id="nav" style="display: none;">
+            <ul>
+                <li><a href="#" id="pop" onclick="showpop()">Popular</a></li>
+            <li><a href="#" id="com" onclick="showcom()">Comedy</a></li>
+            
+            <li><a href="#" id="home" onclick="home()">Show All</a></li>
+        </ul>
+    </div>
+    </div>
+
+    <!-- <div><h1 style="color: white; margin:20px;">Popular </h1></div> -->
+
+
+
+
+    <!-- ___________________________________________________________ -->
+
+    <div id="pbox1" class="pbox1" style="display:none;">
+        <div id="hide1" class="hide1" onclick="phide1()"></div>
+        <div class="showorhide" id="showorhide">
+            <button class="soh" id="soh" onclick="phide1()">x</button>
+        </div>
+        <div id="inbox" class="inbox">
+            
+            <div class="one" class="one">
+                <a href="https://youtu.be/X4bF_quwNtw"><img src="/Images/seriesdetils/lucifer.jpg" alt="" class="all"> </a>
+                <div id="nameofserie" class="nameofseries">
+                    <a href="#" id="play" class="play" onclick="playtrailer()">Play</a>
+                </div>
+                <div style="z-index: 5; position:absolute">
+                    <iframe width="900" height="430" src="https://www.youtube.com/embed/X4bF_quwNtw?autoplay=1"   title="YouTube video player" frameborder="0" allow="autoplay; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="playvideo" id="playvideo" style="display:none; margin-top: -9vh;" ></iframe>
+                </div>
+            </div>
+            <div id="anbox" class="anbox">
+                <div id="lbox" class="lbox">
+                    <h1>Lucifer</h1>
+                    <h3>Devil Is Here</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi doloribus excepturi sunt in porro optio illum iusto deleniti, fugiat voluptas minus dolores neque hic, perspiciatis modi suscipit. Aut, dignissimos quam.</p>
+                </div>
+                <div class="seriessummary" id="seriessummary">
+                    <h5 class="seriestext" id="seriestext" style="display: none;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, vel.</h5>
+                    <img src="/Images/seriesdetils/luciferimg.jpg" alt="" id="img" class="img">
+                </div>
+            </div>
+        </div>
+        <div class="hideline1" onclick="phide1()"></div>
+        <div class="hideline2" onclick="phide1()"></div>
+
+        <div id="hide2" class="hide2" onclick="phide1()"></div>
+
+    </div>
+
+    <!-- ___________________________________________________________ -->
+
+
+    <div class="container">
+        <div class="popslide">
+            <div class="item">
+                <a href="#"><img src="/Images/Shows/popular/lucifer.jpg" alt="" class="pitems" onclick="pshowdetails1()"> </a><h5>Lucifer</h5>
+            </div>
+            <div class="item">
+                <a href="#"><img src="/Images/Shows/popular/strangerthings.jpg" alt="" class="pitems" onclick="showseriesdetails2()"></a><h5>Stranger Things</h5>
+            </div> 
+            <div class="item">
+                <a href="#"><img src="/Images/Shows/popular/arcane.jpg" alt="" class="pitems" onclick="showseriesdetails3()"></a><h5>Arcane</h5>
+            </div>
+            <div class="item" >
+                <a href="#"><img src="/Images/Shows/popular/breaking bad.jpg" alt="" class="pitems" onclick="showseriesdetails4()"></a><h5>Breaking Bad</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/gpv7ayf_tyE"><img src="/Images/Shows/popular/bridgeton.jpg" alt="" class="pitems"></a><h5>Bridgerton</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/L7iWXfZzEMc"><img src="/Images/Shows/popular/caste.jpg" alt="" class="pitems"></a><h5>Castlevania</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/z3dbH7O20bU"><img src="/Images/Shows/popular/community.jpg" alt="" class="pitems"></a><h5>Community</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/JWtnJjn6ng0"><img src="/Images/Shows/popular/crown.jpg" alt="" class="pitems"></a><h5>Crown</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/T3mwUEoZdrI"><img src="/Images/Shows/popular/fatherhood.jpg" alt="" class="pitems"></a><h5>Fatherhood</h5>
+            </div>
+            <div class="item">
+                <a href="https://youtu.be/WxPApTGWwas"><img src="/Images/Shows/popular/last kingdom.jpg" alt="" class="pitems"></a><h5>Last Kingdom</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/wUFwunMKa4E"><img src="/Images/Shows/popular/love death robots.jpg" alt="" class="pitems"></a><h5>Death Robots</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/ga0iTWXCGa0"><img src="/Images/Shows/popular/lupin.jpg" alt="" class="pitems"></a><h5>Lupin</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/89UV8vmWXlY"><img src="/Images/Shows/popular/midnight mass.jpg" alt="" class="pitems"></a><h5>Midnight Mass</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/HyOCCCbxwMQ"><img src="/Images/Shows/popular/neverhaveiever.jpg" alt="" class="pitems"></a><h5>Never Have i Ever</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/5hAXVqrljbs"><img src="/Images/Shows/popular/ozark.jpg" alt="" class="pitems"></a><h5>Ozark</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/PHlJQCyqiaI"><img src="/Images/Shows/popular/mindhunter.jpg "alt="" class="pitems"></a><h5>Midhunter</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/aETNYyrqNYE"><img src="/Images/Shows/popular/planet.jpg" alt="" class="pitems"></a><h5>Planet</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/kIx4ajsIDgY"><img src="/Images/Shows/popular/queens.jpg" alt="" class="pitems"></a><h5>Queens</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/1rCYDbefnmA"><img src="/Images/Shows/popular/teenwolf.jpg" alt="" class="pitems"></a><h5>Teenwolf</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/rD5MSbmdVy8"><img src="/Images/Shows/popular/theboldtype.jpg" alt="" class="pitems"></a><h5>The Bold Type</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/GXrDYboUnnw"><img src="/Images/Shows/popular/theoriginals.jpg" alt="" class="pitems"></a><h5>The Originals</h5>
+            </div>
+            <div class="newitem">
+                <a href="https://youtu.be/BmVmhjjkN4E"><img src="/Images/Shows/popular/vampirediaries.jpg"   alt="" class="pitems"></a><h5>The Vampire Diaries</h5>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/Javascript/script.js"></script>
+
+</body>
+</html>
